@@ -1,2 +1,4 @@
-# ghs_hterminal
-Hacking Terminal full configurable !
+# HACKING TERMINAL FULL FUNCTION !
+
+
+Hacking Terminal Full Configuration !
