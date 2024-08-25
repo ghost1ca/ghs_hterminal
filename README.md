@@ -1,5 +1,7 @@
 # HACKING TERMINAL FULL FUNCTION !
 
+# THIS IS STILL BETA I WILL UPDATE IT WITH COOL FEATURES SOON I JUST POSTED IT FOR PEOPLE WHO WANT A START FOR THIS KIND OF SCRIPT !
+
 Hacking Terminal Full Configuration !
 
 [Documentation](https://ghost1ca.github.io/docs)
