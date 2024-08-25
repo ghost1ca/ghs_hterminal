@@ -38,12 +38,25 @@ RegisterNUICallback('sendCommand', function(data, cb)
         local args = data and data.args[1] or 0
         local args2 = data and data.args[2] or 0
         local output = Commands.execute(command, args, args2)
+        TriggerEvent('hacking:commadnOutput', command, args, args2, output)
+    end
+    cb('ok')
+end)
+
+RegisterNetEvent('hacking:commadnOutput')
+AddEventHandler('hacking:commadnOutput', function(command, args, args2, output)
+    if command == 'test' then
+        local outputfinal = "Executing test command with " .. args .. " and " .. args2 .. " as arguments"
+        SendNUIMessage({
+            type = "TERMINAL_OUTPUT",
+            output = outputfinal
+        })
+    else
         SendNUIMessage({
             type = "TERMINAL_OUTPUT",
             output = output
         })
     end
-    cb('ok')
 end)
 
 -- Function to start hacking

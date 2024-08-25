@@ -12,6 +12,10 @@ Commands.exit = function()
     return "Exiting ..."
 end
 
+Commands.test = function()
+    return "Executing test command"
+end
+
 Commands.execute = function(command, args, args2)
     if Commands[command] then
         return Commands[command](args, args2)
